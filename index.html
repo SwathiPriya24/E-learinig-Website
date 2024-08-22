@@ -15,313 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
         integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        :root {
-            --primarycolor: #007E7E;
-            --secondarycolor: rgb(215, 250, 248);
-        }
-
-        /* nav styles */
-        .bg-body-tertiary {
-            background-color: var(--primarycolor) !important;
-        }
-
-        .navbar-nav .nav-link.active,
-        .navbar-nav .nav-link.show {
-            color: white !important;
-        }
-
-        .nav-link {
-            color: white !important;
-        }
-
-        .navbar-toggler {
-            color: white !important;
-            border: 1px solid white !important;
-        }
-
-        /* nav styl */
-
-        .homepage {
-            background-color: var(--secondarycolor);
-        }
-
-        .searchbox {
-            height: 15px;
-        }
-
-        .btntxt,
-        .btn {
-            border: none;
-            background-color: var(--primarycolor) !important;
-            color: white !important;
-            padding: 10px;
-            border-radius: 50px;
-            margin: 1px;
-        }
-
-        .btntxt1 {
-            border: none;
-            background-color: var(--primarycolor) !important;
-            color: white !important;
-            padding: 10px;
-            border-radius: 50px;
-            margin: 1px;
-            width: 105px;
-        }
-
-
-        .btntxt1,
-        .btntxt:hover {
-            animation: zoomInOut 5s infinite alternate;
-
-        }
-
-        @media only screen and (max-width:992px) {
-            .btn {
-                font-size: 14px;
-                border: none;
-                background-color: var(--primarycolor) !important;
-                color: white;
-                padding: 10px;
-                border-radius: 50px;
-                margin: 1px;
-                width: 90px;
-                height: 35px;
-            }
-        }
-
-        @media only screen and (max-width:772px) {
-            .btn {
-                border: none;
-                background-color: var(--primarycolor) !important;
-                color: white;
-                padding: 10px;
-                border-radius: 50px;
-                margin: 1px;
-                height: auto;
-                width: auto;
-            }
-        }
-
-        .btn:hover {
-            background-color: white !important;
-            color: var(--primarycolor) !important;
-        }
-
-        .homext,
-        h2 {
-            color: var(--primarycolor) !important;
-        }
-
-
-        h5 {
-            color: var(--primarycolor) !important;
-        }
-
-        .dull {
-
-            color: rgb(137, 137, 137);
-        }
-
-        .cardimg {
-            max-height: 350px;
-            padding: 15px;
-            background-color: var(--primarycolor) !important;
-        }
-
-        .star {
-
-            height: 10px;
-        }
-
-        .star1 {
-            height: 15px;
-        }
-
-        .time {
-            height: 20px;
-        }
-
-        .record {
-            height: 100px;
-            background-color: var(--primarycolor) !important;
-            border-radius: 20px;
-            color: white;
-            margin: 20px;
-            text-align: center;
-        }
-
-        .box {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            text-align: center;
-            /* border: 1px solid #ccc; */
-            /* padding: 10px; */
-        }
-
-        .elearn {
-            height: 600px;
-            border-radius: 10px;
-        }
-
-        ::marker {
-            color: white !important;
-        }
-
-        .col-6.d-flex.justify-content-around {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .teacher {
-            border-radius: 50%;
-            height: 200px;
-            width: 200px;
-        }
-
-        .slick-slide {
-            padding: 20px;
-        }
-
-        .form-control:focus {
-            color: var(--bs-body-color);
-            background-color: var(--bs-body-bg);
-            border-color: #d7e6fb;
-            outline: 0;
-            box-shadow: none !important;
-        }
-
-        .cardtech {
-            --bs-card-border-width: none;
-            --bs-card-border-color: none;
-            margin: 10px;
-            position: relative;
-            display: flex;
-            /* justify-content: space-around; */
-            flex-direction: column;
-            min-width: 0;
-            height: fit-content;
-            color: var(--bs-body-color);
-            word-wrap: break-word;
-            background-color: var(--bs-card-bg);
-            background-clip: border-box;
-            border: var(--bs-card-border-width) solid var(--bs-card-border-color);
-            border-radius: var(--bs-card-border-radius);
-        }
-
-        .homeimg {
-            /* width: 100%; */
-            height: 300px;
-            transition: transform 0.5s ease;
-            animation: zoomInOut 10s infinite alternate;
-        }
-
-        /* contact form */
-
-        .sectionFour,
-        .sectionSix {
-            background-color: var(--secondarycolor);
-        }
-
-        textarea {
-            height: 100px;
-        }
-
-        button[type="submit"] {
-            background-color: var(--primarycolor) !important;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        button[type="submit"]:hover {
-            background-color: white;
-            color: var(--primarycolor) !important;
-        }
-
-        .contactimg {
-            height: 400px;
-            background-color: var(--secondarycolor);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
-        }
-
-        /* contact form end */
-        .logo {
-            height: 150px;
-            width: 150px;
-            /* background-color: white; */
-            padding: 10px;
-            margin: 20px;
-            border-radius: 20px;
-        }
-
-
-        a {
-            text-decoration: none !important;
-            color: white;
-            /* font-size: 25px; */
-        }
-
-        .footer {
-            background-color: var(--primarycolor);
-        }
-
-        .navlogo {
-            height: 50px;
-            border-radius: 20px;
-        }
-
-        .navbar-brand {
-            padding: 0px;
-            color: white !important;
-        }
-
-
-        @keyframes zoomInOut {
-            0% {
-                transform: scale(1);
-            }
-
-            50% {
-                transform: scale(0.8);
-            }
-
-            100% {
-                transform: scale(0.9);
-            }
-        }
-
-        .letter-by-letter {
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        .Nav {
-            background-color: var(--primarycolor);
-        }
-
-        .sectionOne {
-            background-color: var(--secondarycolor);
-        }
-
-        .reveal-text span {
-            opacity: 0;
-            animation: revealAnimation 1s forwards;
-
-        }
-
-
-        @keyframes revealAnimation {
-            to {
-                opacity: 1;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -351,31 +45,32 @@
                                     <b> Courses</b>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">UI/UX Desiging</a></li>
-                                    <li><a class="dropdown-item" href="#">Graphic Desiging</a></li>
-                                    <li><a class="dropdown-item" href="#">Full-Stack Development</a></li>
-                                    <li><a class="dropdown-item" href="#">3-D Animation & VFX</a></li>
-                                    <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
-                                    <li><a class="dropdown-item" href="#">Game Technologies</a></li>
-                                    <li><a class="dropdown-item" href="#">Data Science</a></li>
-                                    <li><a class="dropdown-item" href="#">Diploma In Visual Design & Technology</a>
+                                    <li><a class="dropdown-item" href="#courses">UI/UX Desiging</a></li>
+                                    <li><a class="dropdown-item" href="#courses">Graphic Desiging</a></li>
+                                    <li><a class="dropdown-item" href="#courses">Full-Stack Development</a></li>
+                                    <li><a class="dropdown-item" href="#courses">3-D Animation & VFX</a></li>
+                                    <li><a class="dropdown-item" href="#courses">Digital Marketing</a></li>
+                                    <li><a class="dropdown-item" href="#courses">Game Technologies</a></li>
+                                    <li><a class="dropdown-item" href="#courses">Data Science</a></li>
+                                    <li><a class="dropdown-item" href="#courses">Diploma In Visual Design &
+                                            Technology</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Interior Design</a></li>
-                                    <li><a class="dropdown-item" href="#">Artificial Intelligence & Machine Learning
+                                    <li><a class="dropdown-item" href="#courses">Interior Design</a></li>
+                                    <li><a class="dropdown-item" href="#courses">Artificial Intelligence & Machine
+                                            Learning
                                             Program</a></li>
-                                    <li><a class="dropdown-item" href="#">Master Animation in Motion Graphics</a>
+                                    <li><a class="dropdown-item" href="#courses">Master Animation in Motion Graphics</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><b>About</b></a>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#about"><b>About</b></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><b>Contact</b></a>
+                                <a class="nav-link" href="#contact"><b>Contact</b></a>
                             </li>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><b>Login</b></a>
+
                         </ul>
                     </div>
                 </div>
@@ -384,433 +79,432 @@
     </div>
     <!-- Nav Ends -->
     <!-- sectionOne start -->
-    
-        <div class="sectionOne">
-            <div class="homepage container py-4">
-                <div class="row">
-                    <div class="col-md-6 mx-auto">
-                        <div class=" input-group mb-3">
-                            <span class="input-group-text" id="basic-addon1">
-                                <img class="searchbox" src="./IMAGES/search-interface-symbol.png" alt="searchIcon">
-                            </span>
-                            <input type="text" class="form-control" placeholder="Search for Courses">
+
+    <div class="sectionOne">
+        <div class="homepage container py-4">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class=" input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">
+                            <img class="searchbox" src="./IMAGES/search-interface-symbol.png" alt="searchIcon">
+                        </span>
+                        <input type="text" class="form-control" placeholder="Search for Courses">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-6 py-2 px-2 text-center">
+                    <!-- <h1 class="homext">Up Skill to Advance Your Career Path</h1>    -->
+                    <div class="letter-by-letter">
+                        <h1 class="reveal-text homext">Up Skill to Advance Your Career Path</h1>
+                    </div>
+                    <button class="btntxt mt-2">View Courses</button>
+                </div>
+                <div class="col-6 d-flex justify-content-around">
+                    <img class="homeimg" src="./IMAGES/homeimg.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sectionOne ends -->
+    <!-- section Two start -->
+
+    <div id="courses" class="sectionTwo pt-2">
+        <div class="container px-0  text-center">
+            <h2 class=" px-0"><b>Our Courses</b></h2>
+            <div class="courses  pb-4">
+                <div class=" card ">
+                    <img src="./IMAGES/uiux.png" class="cardimg card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="cardalign d-flex justify-content-between align-items-center">
+                            <h6 class="card-title">UI/UX Desiging</h6>
+                            <img class="star" src="./IMAGES/star.png" alt="">
+                        </div>
+                        <div class="cardd d-flex justify-content-between">
+                            <p class="dull d-flex"><img class="time" src="./IMAGES/time-left.png" alt=""> - 6 Months
+                            </p>
+                            <p class="dull">Format- Offline</p>
+                        </div>
+                        <h5>Rs.30,000 </h5>
+                        <hr>
+                        <div class="cardicon">
+                        </div>
+                        <div class="btns d-flex justify-content-around align-items-center">
+                            <a href="#" class="btn ">Enroll Now </a>
+                            <a href="#" class="btn ">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- gd -->
+                <div class="card">
+                    <img src="./IMAGES/gd.png" class="cardimg card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="cardalign d-flex justify-content-between align-items-center">
+                            <h6 class="card-title">Graphic Desiging</h6>
+                            <img class="star" src="./IMAGES/star.png" alt="">
+                        </div>
+
+                        <div class="cardd d-flex justify-content-between">
+                            <p class="dull d-flex"><img class="time" src="./IMAGES/time-left.png" alt=""> - 3 Months
+                            </p>
+                            <p class="dull">Format- Offline</p>
+                        </div>
+                        <h5>Rs.25,000 </h5>
+                        <hr>
+                        <div class="cardicon">
+
+                        </div>
+                        <div class="btns d-flex justify-content-around align-items-center">
+                            <a href="#" class="btn ">Enroll Now </a>
+                            <a href="#" class="btn ">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- id -->
+                <div class="card">
+                    <img src="./IMAGES/Interior design.png" class="cardimg card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="cardalign d-flex justify-content-between align-items-center">
+                            <h6 class="card-title">Interior Designing</h6>
+                            <img class="star" src="./IMAGES/star.png" alt="">
+                        </div>
+
+                        <div class="cardd d-flex justify-content-between">
+                            <p class="dull d-flex"><img class="time" src="./IMAGES/time-left.png" alt=""> - 9 Months
+                            </p>
+                            <p class="dull">Format- Offline</p>
+                        </div>
+                        <h5>Rs.70,000 </h5>
+                        <hr>
+                        <div class="cardicon">
+
+                        </div>
+                        <div class="btns d-flex justify-content-around align-items-center">
+                            <a href="#" class="btn ">Enroll Now </a>
+                            <a href="#" class="btn ">Read More</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col-6 py-2 px-2 text-center">
-                        <!-- <h1 class="homext">Up Skill to Advance Your Career Path</h1>    -->
-                        <div class="letter-by-letter">
-                            <h1 class="reveal-text homext">Up Skill to Advance Your Career Path</h1>
+                <!-- fsd -->
+                <div class="card">
+                    <img src="./IMAGES/fullstack.png" class="cardimg card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="cardalign d-flex justify-content-between align-items-center">
+                            <h6 class="card-title">Full-Stack Developer</h6>
+                            <img class="star" src="./IMAGES/star.png" alt="">
                         </div>
-                        <button class="btntxt mt-2">View Courses</button>
+
+                        <div class="cardd d-flex justify-content-between">
+                            <p class="dull d-flex"><img class="time" src="./IMAGES/time-left.png" alt=""> - 6 Months
+                            </p>
+                            <p class="dull">Format- Offline</p>
+                        </div>
+                        <h5>Rs.30,000 </h5>
+                        <hr>
+                        <div class="cardicon">
+
+                        </div>
+                        <div class="btns d-flex justify-content-around align-items-center">
+                            <a href="#" class="btn ">Enroll Now </a>
+                            <a href="#" class="btn ">Read More</a>
+                        </div>
                     </div>
-                    <div class="col-6 d-flex justify-content-around">
-                        <img class="homeimg" src="./IMAGES/homeimg.png" alt="">
+                </div>
+
+
+                <!-- Digital marketing -->
+                <div class="card">
+                    <img src="./IMAGES/digitalM.png" class="cardimg card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="cardalign d-flex justify-content-between align-items-center">
+                            <h6 class="card-title">Digital Marketing</h6>
+                            <img class="star" src="./IMAGES/star.png" alt="">
+                        </div>
+
+                        <div class="cardd d-flex justify-content-between">
+                            <p class="dull d-flex"><img class="time" src="./IMAGES/time-left.png" alt=""> - 6 Months
+                            </p>
+                            <p class="dull">Format- Offline</p>
+                        </div>
+                        <h5>Rs.30,000 </h5>
+                        <hr>
+                        <div class="cardicon">
+
+                        </div>
+                        <div class="btns d-flex justify-content-around align-items-center">
+                            <a href="#" class="btn ">Enroll Now </a>
+                            <a href="#" class="btn ">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- datascience -->
+                <div class="card">
+                    <img src="./IMAGES/digitalM.png" class="cardimg card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="cardalign d-flex justify-content-between align-items-center">
+                            <h6 class="card-title">Digital Marketing</h6>
+                            <img class="star" src="./IMAGES/star.png" alt="">
+                        </div>
+
+                        <div class="cardd d-flex justify-content-between">
+                            <p class="dull d-flex"><img class="time" src="./IMAGES/time-left.png" alt=""> - 6 Months
+                            </p>
+                            <p class="dull">Format- Offline</p>
+                        </div>
+                        <h5>Rs.30,000 </h5>
+                        <hr>
+                        <div class="cardicon">
+
+                        </div>
+                        <div class="btns d-flex justify-content-around align-items-center">
+                            <a href="#" class="btn ">Enroll Now </a>
+                            <a href="#" class="btn ">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ANI -->
+                <div class="card">
+                    <img src="./IMAGES/3D-Animation.png" class="cardimg card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="cardalign d-flex justify-content-between align-items-center">
+                            <h6 class="card-title">3-D Animation & VFX</h6>
+                            <img class="star" src="./IMAGES/star.png" alt="">
+                        </div>
+
+                        <div class="cardd d-flex justify-content-between">
+                            <p class="dull d-flex"><img class="time" src="./IMAGES/time-left.png" alt=""> - 6 Months
+                            </p>
+                            <p class="dull">Format- Offline</p>
+                        </div>
+                        <h5>Rs.30,000 </h5>
+                        <hr>
+                        <div class="cardicon">
+
+                        </div>
+                        <div class="btns d-flex justify-content-around align-items-center">
+                            <a href="#" class="btn ">Enroll Now </a>
+                            <a href="#" class="btn ">Read More</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- sectionOne ends -->
-        <!-- section Two start -->
+    </div>
 
-        <div class="sectionTwo pt-2">
-            <div class="container px-0  text-center">
-                <h2 class=" px-0"><b>Our Courses</b></h2>
-                <div class="courses  pb-4">
-                    <div class=" card ">
-                        <img src="./IMAGES/uiux.png" class="cardimg card-img-top" alt="...">
-                        <div class="card-body">
-                            <div class="cardalign d-flex justify-content-between align-items-center">
-                                <h6 class="card-title">UI/UX Desiging</h6>
-                                <img class="star" src="./IMAGES/star.png" alt="">
-                            </div>
-                            <div class="cardd d-flex justify-content-between">
-                                <p class="dull d-flex"><img class="time" src="./IMAGES/time-left.png" alt=""> - 6 Months
-                                </p>
-                                <p class="dull">Format- Offline</p>
-                            </div>
-                            <h5>Rs.30,000 </h5>
-                            <hr>
-                            <div class="cardicon">
-                            </div>
-                            <div class="btns d-flex justify-content-around align-items-center">
-                                <a href="#" class="btn ">Enroll Now </a>
-                                <a href="#" class="btn ">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- gd -->
-                    <div class="card">
-                        <img src="./IMAGES/gd.png" class="cardimg card-img-top" alt="...">
-                        <div class="card-body">
-                            <div class="cardalign d-flex justify-content-between align-items-center">
-                                <h6 class="card-title">Graphic Desiging</h6>
-                                <img class="star" src="./IMAGES/star.png" alt="">
-                            </div>
+    <!-- sectionTwo ends -->
 
-                            <div class="cardd d-flex justify-content-between">
-                                <p class="dull d-flex"><img class="time" src="./IMAGES/time-left.png" alt=""> - 3 Months
-                                </p>
-                                <p class="dull">Format- Offline</p>
-                            </div>
-                            <h5>Rs.25,000 </h5>
-                            <hr>
-                            <div class="cardicon">
+    <!-- sectionThree starts -->
+    <div class="sectionThree " id="about">
+        <div class="container text-center">
+            <h2><b>Our Learning Experience</b> </h2>
+            <div class="row ">
+                <div class="col-lg-6 order-lg-2">
+                    <h5 class="pt-2 text-center">
 
-                            </div>
-                            <div class="btns d-flex justify-content-around align-items-center">
-                                <a href="#" class="btn ">Enroll Now </a>
-                                <a href="#" class="btn ">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- id -->
-                    <div class="card">
-                        <img src="./IMAGES/Interior design.png" class="cardimg card-img-top" alt="...">
-                        <div class="card-body">
-                            <div class="cardalign d-flex justify-content-between align-items-center">
-                                <h6 class="card-title">Interior Designing</h6>
-                                <img class="star" src="./IMAGES/star.png" alt="">
-                            </div>
-
-                            <div class="cardd d-flex justify-content-between">
-                                <p class="dull d-flex"><img class="time" src="./IMAGES/time-left.png" alt=""> - 9 Months
-                                </p>
-                                <p class="dull">Format- Offline</p>
-                            </div>
-                            <h5>Rs.70,000 </h5>
-                            <hr>
-                            <div class="cardicon">
-
-                            </div>
-                            <div class="btns d-flex justify-content-around align-items-center">
-                                <a href="#" class="btn ">Enroll Now </a>
-                                <a href="#" class="btn ">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- fsd -->
-                    <div class="card">
-                        <img src="./IMAGES/fullstack.png" class="cardimg card-img-top" alt="...">
-                        <div class="card-body">
-                            <div class="cardalign d-flex justify-content-between align-items-center">
-                                <h6 class="card-title">Full-Stack Developer</h6>
-                                <img class="star" src="./IMAGES/star.png" alt="">
-                            </div>
-
-                            <div class="cardd d-flex justify-content-between">
-                                <p class="dull d-flex"><img class="time" src="./IMAGES/time-left.png" alt=""> - 6 Months
-                                </p>
-                                <p class="dull">Format- Offline</p>
-                            </div>
-                            <h5>Rs.30,000 </h5>
-                            <hr>
-                            <div class="cardicon">
-
-                            </div>
-                            <div class="btns d-flex justify-content-around align-items-center">
-                                <a href="#" class="btn ">Enroll Now </a>
-                                <a href="#" class="btn ">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- Digital marketing -->
-                    <div class="card">
-                        <img src="./IMAGES/digitalM.png" class="cardimg card-img-top" alt="...">
-                        <div class="card-body">
-                            <div class="cardalign d-flex justify-content-between align-items-center">
-                                <h6 class="card-title">Digital Marketing</h6>
-                                <img class="star" src="./IMAGES/star.png" alt="">
-                            </div>
-
-                            <div class="cardd d-flex justify-content-between">
-                                <p class="dull d-flex"><img class="time" src="./IMAGES/time-left.png" alt=""> - 6 Months
-                                </p>
-                                <p class="dull">Format- Offline</p>
-                            </div>
-                            <h5>Rs.30,000 </h5>
-                            <hr>
-                            <div class="cardicon">
-
-                            </div>
-                            <div class="btns d-flex justify-content-around align-items-center">
-                                <a href="#" class="btn ">Enroll Now </a>
-                                <a href="#" class="btn ">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- datascience -->
-                    <div class="card">
-                        <img src="./IMAGES/digitalM.png" class="cardimg card-img-top" alt="...">
-                        <div class="card-body">
-                            <div class="cardalign d-flex justify-content-between align-items-center">
-                                <h6 class="card-title">Digital Marketing</h6>
-                                <img class="star" src="./IMAGES/star.png" alt="">
-                            </div>
-
-                            <div class="cardd d-flex justify-content-between">
-                                <p class="dull d-flex"><img class="time" src="./IMAGES/time-left.png" alt=""> - 6 Months
-                                </p>
-                                <p class="dull">Format- Offline</p>
-                            </div>
-                            <h5>Rs.30,000 </h5>
-                            <hr>
-                            <div class="cardicon">
-
-                            </div>
-                            <div class="btns d-flex justify-content-around align-items-center">
-                                <a href="#" class="btn ">Enroll Now </a>
-                                <a href="#" class="btn ">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ANI -->
-                    <div class="card">
-                        <img src="./IMAGES/3D-Animation.png" class="cardimg card-img-top" alt="...">
-                        <div class="card-body">
-                            <div class="cardalign d-flex justify-content-between align-items-center">
-                                <h6 class="card-title">3-D Animation & VFX</h6>
-                                <img class="star" src="./IMAGES/star.png" alt="">
-                            </div>
-
-                            <div class="cardd d-flex justify-content-between">
-                                <p class="dull d-flex"><img class="time" src="./IMAGES/time-left.png" alt=""> - 6 Months
-                                </p>
-                                <p class="dull">Format- Offline</p>
-                            </div>
-                            <h5>Rs.30,000 </h5>
-                            <hr>
-                            <div class="cardicon">
-
-                            </div>
-                            <div class="btns d-flex justify-content-around align-items-center">
-                                <a href="#" class="btn ">Enroll Now </a>
-                                <a href="#" class="btn ">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- sectionTwo ends -->
-
-        <!-- sectionThree starts -->
-        <div class="sectionThree ">
-            <div class="container text-center">
-                <h2><b>Our Learning Experience</b> </h2>
-                <div class="row ">
-                    <div class="col-lg-6 order-lg-2">
-                        <h5 class="pt-2 text-center">
-
-                        </h5>
-                        <p>At Skill Hub, we believe in transforming education through innovative
-                            digital solutions that empower learners worldwide. With three years of experience in the
-                            e-learning industry, we have cultivated a rich ecosystem designed to meet the diverse needs
-                            of modern learners.</p>
-                        <b>Cutting-Edge Technology</b>
-                        <p>Harnessing the power of cutting-edge technology, our platform offers seamless access to a
-                            wide array of courses across [subject areas or industries]. From interactive video lectures
-                            to virtual simulations, we leverage the latest advancements to create immersive learning
-                            experiences.</p>
-                        <b>Expert Faculty</b>
-                        <p>Our courses are crafted by a team of renowned educators and industry experts who bring years
-                            of practical knowledge and academic rigor to the virtual classroom. They are committed to
-                            delivering engaging content that fosters critical thinking and real-world application.</p>
-                        <b>Flexible Learning Paths</b>
-                        <p>Recognizing that every learner is unique, we provide flexible learning paths that cater to
-                            different schedules, learning styles, and career aspirations. Whether you are a working
-                            professional looking to upskill or a student preparing for exams, our adaptive approach
-                            ensures that you can learn at your own pace.</p>
-                        <b>Personalized Learning Experience</b>
-                        <p>We believe in personalized learning that puts learners at the center. Our adaptive algorithms
-                            analyze your progress and preferences to recommend tailored content and learning activities,
-                            ensuring that every moment spent on our platform contributes to your educational journey.
-                        </p>
-
-                    </div>
-                    <div class="col-lg-6 order-lg-1 d-flex justify-content-center align-items-center">
-                        <img class="elearn" src="./IMAGES/elearnimg.png" alt="">
-                    </div>
-                </div>
-
-                <div class="record row mt-0  pt-0">
-                    <div class="box  d-flex justify-content-around align-items-center text-center">
-                        <h4> <span id="number1">0 </span> K<br> Success Stories</h4>
-                        <h4> <span id="number2"> 0</span> +<br>Collaborations</h4>
-                        <h4><span id="number3">0 </span> K<br> Online Courses</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- sectionThree ends -->
-
-        <!-- sectionFour starts -->
-        <div class="sectionFour">
-            <div class="container pb-4 text-center">
-                <h2 class="py-4"><b>Meet Our Popular Tutors</b></h2>
-                <div class="row tutor d-flex justify-content-between align-items-center">
-                    <div class=" col-lg-3 col-md-6   d-flex justify-content-center">
-                        <div class="card-body pt-2" style="width: 18rem;">
-                            <img class="teacher" src="./IMAGES/teacher1.jpg" class="card-img-top" alt="...">
-                            <p class="card-text "><i><b>Selena Mathew</b></i></p>
-                            <h6 class="card-text">Full-stack Developer</h6>
-                            <h6 class="card-text">
-                                <h6>37 courses</h6>
-                                <p class="card-text  "><img class="star1" src="./IMAGES/singlestar.png" alt=""> 4.8
-                                    <i>(68,868)</i>
-                                </p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3  col-md-6  d-flex justify-content-center">
-                        <div class="card-body pt-2" style="width: 18rem;">
-                            <img class="teacher" src="./IMAGES/teacher3.jpg" class="card-img-top" alt="...">
-                            <p class="card-text "><i><b>Jessica Thomas</b></i></p>
-                            <h6 class="card-text">Full-stack Developer</h6>
-                            <h6 class="card-text">
-                                <h6>62 courses</h6>
-                                <p class="card-text  "><img class="star1" src="./IMAGES/singlestar.png" alt=""> 4.9
-                                    <i>(87,532)</i>
-                                </p>
-                        </div>
-                    </div>
-                    <div class=" col-lg-3 col-md-6   d-flex justify-content-center">
-
-                        <div class="card-body pt-2" style="width: 18rem;">
-                            <img class="teacher" src="./IMAGES/teacher4.jpg" class="card-img-top" alt="...">
-                            <p class="card-text "><i><b>Tom Henry</b></i></p>
-                            <h6 class="card-text">SQL</h6>
-                            <h6 class="card-text">
-                                <h6>42 courses</h6>
-                                <p class="card-text  "><img class="star1" src="./IMAGES/singlestar.png" alt=""> 4.8
-                                    <i>(88,973)</i>
-                                </p>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6   d-flex justify-content-center">
-
-                        <div class="card-body pt-2" style="width: 18rem;">
-                            <img class="teacher" src="./IMAGES/teacher5.jpg" class="card-img-top" alt="...">
-                            <p class="card-text "><i><b>Robert James</b></i></p>
-                            <h6 class="card-text">UI/UX Designer</h6>
-
-                            <h6 class="card-text">
-                                <h6>56 courses</h6>
-                                <p class="card-text  "><img class="star1" src="./IMAGES/singlestar.png" alt=""> 4.9
-                                    <i>(76,335)</i>
-                                </p>
-
-                        </div>
-                    </div>
-
+                    </h5>
+                    <p>At Skill Hub, we believe in transforming education through innovative
+                        digital solutions that empower learners worldwide. With three years of experience in the
+                        e-learning industry, we have cultivated a rich ecosystem designed to meet the diverse needs
+                        of modern learners.</p>
+                    <b>Cutting-Edge Technology</b>
+                    <p>Harnessing the power of cutting-edge technology, our platform offers seamless access to a
+                        wide array of courses across [subject areas or industries]. From interactive video lectures
+                        to virtual simulations, we leverage the latest advancements to create immersive learning
+                        experiences.</p>
+                    <b>Expert Faculty</b>
+                    <p>Our courses are crafted by a team of renowned educators and industry experts who bring years
+                        of practical knowledge and academic rigor to the virtual classroom. They are committed to
+                        delivering engaging content that fosters critical thinking and real-world application.</p>
+                    <b>Flexible Learning Paths</b>
+                    <p>Recognizing that every learner is unique, we provide flexible learning paths that cater to
+                        different schedules, learning styles, and career aspirations. Whether you are a working
+                        professional looking to upskill or a student preparing for exams, our adaptive approach
+                        ensures that you can learn at your own pace.</p>
+                    <b>Personalized Learning Experience</b>
+                    <p>We believe in personalized learning that puts learners at the center. Our adaptive algorithms
+                        analyze your progress and preferences to recommend tailored content and learning activities,
+                        ensuring that every moment spent on our platform contributes to your educational journey.
+                    </p>
 
                 </div>
-            </div>
-        </div>
-        <!-- sectionFour ends -->
-
-        <!-- sectionFive starts -->
-        <div class="sectionFive">
-            <div class="container text-center py-4">
-                <h2> <b>Testimonials</b></h2>
-                <b>John D</b>
-                <br>
-                <i> "I never thought learning could be this engaging and convenient! The courses are
-                    well-structured,
-                    the instructors are knowledgeable, and the interactive platform makes it easy to grasp complex
-                    concepts."</i>
-                <br>
-                <b> Sarah K</b>
-                <br>
-                <i>"As a working professional, finding time for traditional classes was impossible. Skill Hub
-                    offered me the flexibility I needed to pursue my interests on my schedule. The diverse course
-                    offerings and practical assignments helped me advance my career in ways I never thought
-                    possible."</i>
-                <br>
-                <b>Michael P</b>
-                <br>
-                <i>"I stumbled upon Skill Hub while searching for a course to boost my skills. The quality of
-                    content exceeded my expectations. The community support and feedback from instructors were
-                    invaluable in my learning journey."</i>
-                <br>
-                <b>Emily S</b> <br>
-                <i>"The user-friendly interface of Skill Hub made navigating through the courses effortless. The
-                    quizzes and assessments were challenging yet manageable, allowing me to track my progress
-                    effectively."</i>
-            </div>
-        </div>
-
-        <!-- sectionFive ends -->
-
-        <!-- sectionSix starts -->
-        <div class="sectionSix">
-            <div class="container text-center">
-                <h2 class=" py-4"><b>Contact Us</b></h2>
-                <div class=" row d-flex justify-content-around align-items-center">
-                    <div class="col-lg-6 px-5 py-2 px-0 contact">
-
-                        <div class="input-group mb-3">
-                            <span class="input-group-text" id="basic-addon1"><img src="./IMAGES/wpf--name.svg"
-                                    alt=""></span>
-                            <input type="text" class="form-control" placeholder="Name" aria-label="Username"
-                                aria-describedby="basic-addon1">
-                        </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text" id="basic-addon1"><img src="./IMAGES/email.svg"
-                                    alt=""></span>
-                            <input type="text" class="form-control" placeholder="Email" aria-label="Username"
-                                aria-describedby="basic-addon1">
-                        </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text" id="basic-addon1"><img src="./IMAGES/msg.svg" alt=""></span>
-                            <input type="text" class=" form-control" placeholder="Message">
-                        </div>
-                        <button class="btntxt1 mt-2"><a href="">Contact Me</a></button>
-                    </div>
-                    <div class="col-lg-6 px-0">
-                        <img class="contactimg" src="./IMAGES/Contact.png" alt="">
-                    </div>
-
+                <div class="col-lg-6 order-lg-1 d-flex justify-content-center align-items-center">
+                    <img class="elearn" src="./IMAGES/elearnimg.png" alt="">
                 </div>
             </div>
 
-
-        </div>
-        <!-- sectionSix ends -->
-
-        <!-- Footer start -->
-        <div class="footer">
-            <div class="container">
-                <div class="footer row  d-flex justify-content-around align-items-center">
-                    <div class="col-lg-4  d-flex justify-content-around align-items-center">
-                        <h2><a href=""><img class="logo pt-4" src="./IMAGES/skillhub.png" alt=""></a></h2>
-                    </div>
-                    <div class="col-lg-2 col-6">
-                        <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Phone </a></li>
-                            <li><a href="">Email</a></li>
-                        </ul>
-                    </div>
-                    <div class=" col-lg-2 col-6">
-                        <ul>
-                            <li><a href="">View Courses</a></li>
-                            <li><a href="">Popular Tutors</a></li>
-                            <li><a href="">Testimonials</a></li>
-                        </ul>
-                    </div>
+            <div class="record row mt-0  pt-0">
+                <div class="box  d-flex justify-content-around align-items-center text-center">
+                    <h4> <span id="number1">0 </span> K<br> Success Stories</h4>
+                    <h4> <span id="number2"> 0</span> +<br>Collaborations</h4>
+                    <h4><span id="number3">0 </span> K<br> Online Courses</h4>
                 </div>
             </div>
         </div>
-        <!-- Footer ends -->
+    </div>
+    <!-- sectionThree ends -->
+
+    <!-- sectionFour starts -->
+    <div id="tutor" class="sectionFour">
+        <div class="container pb-4 text-center">
+            <h2 class="py-4"><b>Meet Our Popular Tutors</b></h2>
+            <div class="row tutor d-flex justify-content-between align-items-center">
+                <div class=" col-lg-3 col-md-6   d-flex justify-content-center">
+                    <div class="card-body pt-2" style="width: 18rem;">
+                        <img class="teacher" src="./IMAGES/teacher1.jpg" class="card-img-top" alt="...">
+                        <p class="card-text "><i><b>Selena Mathew</b></i></p>
+                        <h6 class="card-text">Full-stack Developer</h6>
+                        <h6 class="card-text">
+                            <h6>37 courses</h6>
+                            <p class="card-text  "><img class="star1" src="./IMAGES/singlestar.png" alt=""> 4.8
+                                <i>(68,868)</i>
+                            </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3  col-md-6  d-flex justify-content-center">
+                    <div class="card-body pt-2" style="width: 18rem;">
+                        <img class="teacher" src="./IMAGES/teacher3.jpg" class="card-img-top" alt="...">
+                        <p class="card-text "><i><b>Jessica Thomas</b></i></p>
+                        <h6 class="card-text">Full-stack Developer</h6>
+                        <h6 class="card-text">
+                            <h6>62 courses</h6>
+                            <p class="card-text  "><img class="star1" src="./IMAGES/singlestar.png" alt=""> 4.9
+                                <i>(87,532)</i>
+                            </p>
+                    </div>
+                </div>
+                <div class=" col-lg-3 col-md-6   d-flex justify-content-center">
+
+                    <div class="card-body pt-2" style="width: 18rem;">
+                        <img class="teacher" src="./IMAGES/teacher4.jpg" class="card-img-top" alt="...">
+                        <p class="card-text "><i><b>Tom Henry</b></i></p>
+                        <h6 class="card-text">SQL</h6>
+                        <h6 class="card-text">
+                            <h6>42 courses</h6>
+                            <p class="card-text  "><img class="star1" src="./IMAGES/singlestar.png" alt=""> 4.8
+                                <i>(88,973)</i>
+                            </p>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6   d-flex justify-content-center">
+
+                    <div class="card-body pt-2" style="width: 18rem;">
+                        <img class="teacher" src="./IMAGES/teacher5.jpg" class="card-img-top" alt="...">
+                        <p class="card-text "><i><b>Robert James</b></i></p>
+                        <h6 class="card-text">UI/UX Designer</h6>
+
+                        <h6 class="card-text">
+                            <h6>56 courses</h6>
+                            <p class="card-text  "><img class="star1" src="./IMAGES/singlestar.png" alt=""> 4.9
+                                <i>(76,335)</i>
+                            </p>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- sectionFour ends -->
+
+    <!-- sectionFive starts -->
+    <div id="Testimonials" class="sectionFive">
+        <div class="container text-center py-4">
+            <h2> <b>Testimonials</b></h2>
+            <b>John D</b>
+            <br>
+            <i> "I never thought learning could be this engaging and convenient! The courses are
+                well-structured,
+                the instructors are knowledgeable, and the interactive platform makes it easy to grasp complex
+                concepts."</i>
+            <br>
+            <b> Sarah K</b>
+            <br>
+            <i>"As a working professional, finding time for traditional classes was impossible. Skill Hub
+                offered me the flexibility I needed to pursue my interests on my schedule. The diverse course
+                offerings and practical assignments helped me advance my career in ways I never thought
+                possible."</i>
+            <br>
+            <b>Michael P</b>
+            <br>
+            <i>"I stumbled upon Skill Hub while searching for a course to boost my skills. The quality of
+                content exceeded my expectations. The community support and feedback from instructors were
+                invaluable in my learning journey."</i>
+            <br>
+            <b>Emily S</b> <br>
+            <i>"The user-friendly interface of Skill Hub made navigating through the courses effortless. The
+                quizzes and assessments were challenging yet manageable, allowing me to track my progress
+                effectively."</i>
+        </div>
+    </div>
+
+    <!-- sectionFive ends -->
+
+    <!-- sectionSix starts -->
+    <div id="contact" class="sectionSix">
+        <div class="container text-center">
+            <h2 class=" py-4"><b>Contact Us</b></h2>
+            <div class=" row d-flex justify-content-around align-items-center">
+                <div class="col-lg-6 px-5 py-2 px-0 contact">
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"><img src="./IMAGES/wpf--name.svg"
+                                alt=""></span>
+                        <input type="text" class="form-control" placeholder="Name" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"><img src="./IMAGES/email.svg" alt=""></span>
+                        <input type="text" class="form-control" placeholder="Email" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"><img src="./IMAGES/msg.svg" alt=""></span>
+                        <input type="text" class=" form-control" placeholder="Message">
+                    </div>
+                    <button class="btntxt1 mt-2"><a href="">Contact Me</a></button>
+                </div>
+                <div class="col-lg-6 px-0">
+                    <img class="contactimg" src="./IMAGES/Contact.png" alt="">
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <!-- sectionSix ends -->
+
+    <!-- Footer start -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer row  d-flex justify-content-around align-items-center">
+                <div class="col-lg-4  d-flex justify-content-around align-items-center">
+                    <h2><a href=""><img class="logo pt-4" src="./IMAGES/skillhub.png" alt=""></a></h2>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Phone </a></li>
+                        <li><a href="mailto:skillhub@gmail.com">Email</a></li>
+                    </ul>
+                </div>
+                <div class=" col-lg-2 col-6">
+                    <ul>
+                        <li><a href="#courses">View Courses</a></li>
+                        <li><a href="#tutor">Popular Tutors</a></li>
+                        <li><a href="#Testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer ends -->
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -856,57 +550,7 @@
             });
 
         });
-    </script>
-
-    <!-- number -->
-    <script>
-        // Function to animate numbers
-        function animateValue(id, start, end, duration) {
-            var range = end - start;
-            var current = start;
-            var increment = end > start ? 1 : -1;
-            var stepTime = Math.abs(Math.floor(duration / range));
-            var obj = document.getElementById(id);
-            var timer = setInterval(function () {
-                current += increment;
-                obj.innerHTML = current;
-                if (current == end) {
-                    clearInterval(timer);
-                }
-            }, stepTime);
-        }
-
-
-        animateValue("number1", 0, 35, 2000);
-        animateValue("number2", 0, 210, 2000);
-        animateValue("number3", 0, 54, 2000); 
-    </script>
-    <!-- text reveal -->
-    <script>
-
-        document.addEventListener('DOMContentLoaded', function () {
-
-            const text = document.querySelector('.reveal-text');
-
-
-            const textContent = text.textContent;
-
-
-            const characters = textContent.split('');
-
-
-            text.textContent = '';
-
-
-            characters.forEach((char, index) => {
-                const charElement = document.createElement('span');
-                charElement.textContent = char;
-                charElement.style.animationDelay = `${index * 0.1}s`; // Adjust delay as needed
-                text.appendChild(charElement);
-            });
-        });
-
-    </script>
+    </script>;
 </body>
 
 </html>

@@ -1,0 +1,320 @@
+:root {
+    --primarycolor: #007E7E;
+    --secondarycolor: rgb(215, 250, 248);
+}
+
+/* nav styles */
+.bg-body-tertiary {
+    background-color: var(--primarycolor) !important;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: white !important;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #d9bf56 !important;
+}
+
+.nav-link {
+    color: white !important;
+}
+ a.nav-link :hover{
+    color: #d9bf56 !important;
+}
+
+.navbar-toggler {
+    color: white !important;
+    border: 1px solid white !important;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        justify-content: center;
+        flex-basis: auto;
+    }
+}
+/* nav styl */
+
+.homepage {
+    background-color: var(--secondarycolor);
+}
+
+.searchbox {
+    height: 15px;
+}
+
+.btntxt,
+.btn {
+    border: none;
+    background-color: var(--primarycolor) !important;
+    color: white !important;
+    padding: 10px;
+    border-radius: 50px;
+    margin: 1px;
+}
+
+.btntxt1 {
+    border: none;
+    background-color: var(--primarycolor) !important;
+    color: white !important;
+    padding: 10px;
+    border-radius: 50px;
+    margin: 1px;
+    width: 105px;
+}
+
+
+.btntxt1,
+.btntxt:hover {
+    animation: zoomInOut 5s infinite alternate;
+
+}
+
+@media only screen and (max-width:992px) {
+    .btn {
+        font-size: 14px;
+        border: none;
+        background-color: var(--primarycolor) !important;
+        color: white;
+        padding: 10px;
+        border-radius: 50px;
+        margin: 1px;
+        width: 90px;
+        height: 35px;
+    }
+}
+
+@media only screen and (max-width:772px) {
+    .btn {
+        border: none;
+        background-color: var(--primarycolor) !important;
+        color: white;
+        padding: 10px;
+        border-radius: 50px;
+        margin: 1px;
+        height: auto;
+        width: auto;
+    }
+}
+
+.btn:hover {
+    background-color: white !important;
+    color: var(--primarycolor) !important;
+}
+
+.homext,
+h2 {
+    color: var(--primarycolor) !important;
+}
+
+
+h5 {
+    color: var(--primarycolor) !important;
+}
+
+.dull {
+
+    color: rgb(137, 137, 137);
+}
+
+.cardimg {
+    max-height: 350px;
+    padding: 15px;
+    background-color: var(--primarycolor) !important;
+}
+
+.star {
+
+    height: 10px;
+}
+
+.star1 {
+    height: 15px;
+}
+
+.time {
+    height: 20px;
+}
+
+.record {
+    height: 100px;
+    background-color: var(--primarycolor) !important;
+    border-radius: 20px;
+    color: white;
+    margin: 20px;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    /* border: 1px solid #ccc; */
+    /* padding: 10px; */
+}
+
+.elearn {
+    height: 600px;
+    border-radius: 10px;
+}
+
+::marker {
+    color: white !important;
+}
+
+.col-6.d-flex.justify-content-around {
+    position: relative;
+    overflow: hidden;
+}
+
+.teacher {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.slick-slide {
+    padding: 20px;
+}
+
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #d7e6fb;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.cardtech {
+    --bs-card-border-width: none;
+    --bs-card-border-color: none;
+    margin: 10px;
+    position: relative;
+    display: flex;
+    /* justify-content: space-around; */
+    flex-direction: column;
+    min-width: 0;
+    height: fit-content;
+    color: var(--bs-body-color);
+    word-wrap: break-word;
+    background-color: var(--bs-card-bg);
+    background-clip: border-box;
+    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+    border-radius: var(--bs-card-border-radius);
+}
+
+.homeimg {
+    /* width: 100%; */
+    height: 300px;
+    transition: transform 0.5s ease;
+    animation: zoomInOut 10s infinite alternate;
+}
+
+/* contact form */
+
+.sectionFour,
+.sectionSix {
+    background-color: var(--secondarycolor);
+}
+
+textarea {
+    height: 100px;
+}
+
+button[type="submit"] {
+    background-color: var(--primarycolor) !important;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: white;
+    color: var(--primarycolor) !important;
+}
+
+.contactimg {
+    height: 400px;
+    background-color: var(--secondarycolor);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* contact form end */
+.logo {
+    height: 150px;
+    width: 150px;
+    /* background-color: white; */
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+
+a {
+    text-decoration: none !important;
+    color: white;
+    /* font-size: 25px; */
+}
+
+.footer {
+    background-color: var(--primarycolor);
+}
+
+.navlogo {
+    height: 50px;
+    border-radius: 20px;
+}
+
+.navbar-brand {
+    padding: 0px;
+    color: white !important;
+}
+
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+.letter-by-letter {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.Nav {
+    background-color: var(--primarycolor);
+}
+
+.sectionOne {
+    background-color: var(--secondarycolor);
+}
+
+.reveal-text span {
+    opacity: 0;
+    animation: revealAnimation 1s forwards;
+
+}
+
+
+@keyframes revealAnimation {
+    to {
+        opacity: 1;
+    }
+}
