@@ -15,7 +15,7 @@
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
-    color: #d9bf56 !important;
+    color: #ffffff !important;
 }
 
 .nav-link {
@@ -55,6 +55,8 @@
     padding: 10px;
     border-radius: 50px;
     margin: 1px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 .btntxt1 {
@@ -62,16 +64,23 @@
     background-color: var(--primarycolor) !important;
     color: white !important;
     padding: 10px;
-    border-radius: 50px;
+    border-radius: 20px;
     margin: 1px;
-    width: 105px;
+}
+.btntxt1:hover{
+    background-color: #0056b3; 
+    color: #fff; 
+    transform: scale(1.1);
+    border: 2px solid var(--primarycolor);
 }
 
-
-.btntxt1,
+  
 .btntxt:hover {
-    animation: zoomInOut 5s infinite alternate;
-
+    background-color: #0056b3; 
+    color: #fff; 
+    transform: scale(1.1);
+    border: 2px solid var(--primarycolor);
+    width: 125px;
 }
 
 @media only screen and (max-width:992px) {
@@ -104,6 +113,7 @@
 .btn:hover {
     background-color: white !important;
     color: var(--primarycolor) !important;
+    border: 2px solid var(--primarycolor);
 }
 
 .homext,
@@ -254,7 +264,7 @@ button[type="submit"]:hover {
     /* background-color: white; */
     padding: 10px;
     margin: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 
@@ -270,7 +280,7 @@ a {
 
 .navlogo {
     height: 50px;
-    border-radius: 20px;
+    border-radius: 2px;
 }
 
 .navbar-brand {
